@@ -1,7 +1,9 @@
 # EX-06 Implementation of Semantic Analysis
+# NAME: HARISHKUMAR R
+# REG NO: 212223230073
+
 ### Aim: 
 To perform Parts of speech identification and Synonym using Natural Language &emsp;&emsp;&emsp;&emsp;<br>Processing (NLP) techniques.
-<H3> DATE :    </H3>
 ### Algorithm:
 Step 1: Import the nltk library.<br>
 Step 2: Download the 'punkt', 'wordnet', and 'averaged_perceptron_tagger' resources.<br>
@@ -14,12 +16,9 @@ Step 5:Iterate through each word in the tokenized text.<br>
 •	Extract synonyms and antonyms using lemma.name() and lemma.antonyms()[0].name() respectively.<br>
 •	Print the unique sets of synonyms and antonyms.
 ### Program:
-```
-**Developed By: HARISHKUMAR R**
-**REGISTER NO: 212223230073**
-```
+
 ##### Importing NLTK and Resource Downloads
-```py
+```Python
 import nltk
 nltk.download( 'punkt' )
 nltk.download('wordnet')
@@ -29,7 +28,7 @@ nltk.download( 'averaged_perceptron_tagger' )
 from nltk.corpus import wordnet
 ```
 ##### Tokenization and Part-of-Speech Tagging
-```py
+```Python
 sentence=input()
 words = word_tokenize(sentence)
 pos_tags= nltk.pos_tag(words)
@@ -37,7 +36,7 @@ for word, tag in pos_tags:
     print(f"{word:<6} - {tag}")
 ```
 ##### Extracting Synonyms and Antonyms from Words
-```py
+```Python
 synonyms =[]
 antonyms =[]
 for word in words:
