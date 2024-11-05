@@ -19,7 +19,7 @@ Step 5:Iterate through each word in the tokenized text.<br>
 **REGISTER NO: 212223230073**
 ```
 ##### Importing NLTK and Resource Downloads
-```Python
+```py
 import nltk
 nltk.download( 'punkt' )
 nltk.download('wordnet')
@@ -29,7 +29,7 @@ nltk.download( 'averaged_perceptron_tagger' )
 from nltk.corpus import wordnet
 ```
 ##### Tokenization and Part-of-Speech Tagging
-```Python
+```py
 sentence=input()
 words = word_tokenize(sentence)
 pos_tags= nltk.pos_tag(words)
@@ -37,7 +37,7 @@ for word, tag in pos_tags:
     print(f"{word:<6} - {tag}")
 ```
 ##### Extracting Synonyms and Antonyms from Words
-```Python
+```py
 synonyms =[]
 antonyms =[]
 for word in words:
